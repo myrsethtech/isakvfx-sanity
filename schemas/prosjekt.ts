@@ -20,9 +20,14 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'timeperiod',
-      title: 'Time period',
-      type: 'string',
+      name: 'fromDate',
+      title: 'From Date',
+      type: 'datetime',
+    }),
+    defineField({
+      name: 'toDate',
+      title: 'To Date',
+      type: 'datetime',
     }),
     defineField({
       name: 'description',
