@@ -1,13 +1,13 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'post',
-  title: 'Post',
+  name: 'prosjekt',
+  title: 'Prosjekt',
   type: 'document',
   fields: [
     defineField({
-      name: 'title',
-      title: 'Title',
+      name: 'tittel',
+      title: 'Tittel',
       type: 'string',
     }),
     defineField({
@@ -20,34 +20,37 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
+      name: 'beskrivelse',
+      title: 'Beskrivelse',
+      type: 'string',
     }),
     defineField({
-      name: 'mainImage',
-      title: 'Main image',
+      name: 'teknologier',
+      title: 'Teknologier',
+      type: 'string',
+    }),
+    defineField({
+      name: 'hovedBilde',
+      title: 'Hoved bilde',
       type: 'image',
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
-    }),
-    defineField({
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    }),
-    defineField({
       name: 'body',
       title: 'Body',
       type: 'blockContent',
+    }),
+    defineField({
+      name: 'github',
+      title: 'Github',
+      type: 'string',
+    }),
+    defineField({
+      name: 'url',
+      title: 'URL',
+      type: 'string',
     }),
   ],
 
