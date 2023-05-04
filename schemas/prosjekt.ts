@@ -1,13 +1,13 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'prosjekt',
-  title: 'Prosjekt',
+  name: 'project',
+  title: 'Project',
   type: 'document',
   fields: [
     defineField({
-      name: 'tittel',
-      title: 'Tittel',
+      name: 'title',
+      title: 'Title',
       type: 'string',
     }),
     defineField({
@@ -20,18 +20,18 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'beskrivelse',
-      title: 'Beskrivelse',
+      name: 'description',
+      title: 'Description',
       type: 'string',
     }),
     defineField({
-      name: 'teknologier',
-      title: 'Teknologier',
+      name: 'technologies',
+      title: 'Technologies',
       type: 'string',
     }),
     defineField({
-      name: 'hovedBilde',
-      title: 'Hoved bilde',
+      name: 'mainImage',
+      title: 'Main image',
       type: 'image',
       options: {
         hotspot: true,
@@ -56,7 +56,7 @@ export default defineType({
 
   preview: {
     select: {
-      title: 'tittel',
+      title: 'title',
       media: 'mainImage',
     },
   },
