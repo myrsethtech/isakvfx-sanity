@@ -20,6 +20,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'timeperiod',
+      title: 'Time period',
+      type: 'string',
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'string',
