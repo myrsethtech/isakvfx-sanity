@@ -28,7 +28,7 @@ export default defineType({
       name: 'toDate',
       title: 'To Date',
       type: 'datetime',
-    })
+    }),
     defineField({
       name: 'description',
       title: 'Description',
