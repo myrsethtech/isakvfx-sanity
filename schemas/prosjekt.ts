@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'project',
@@ -35,9 +35,14 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'technologies',
+      title: 'Technologies',
+      type: 'string',
+    }),
+    defineField({
       name: 'youtube',
-      title: 'YouTube-URL',
-      description: "URL found when clicking Share -> Embed: https://www.youtube.com/embed/code",
+      title: 'YouTube-ID',
+      description: 'ID found when clicking Share -> https://www.youtu.be/ID',
       type: 'string',
     }),
     defineField({
